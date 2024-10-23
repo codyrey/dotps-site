@@ -1,0 +1,151 @@
+header {
+    width: 100%;
+    height: 12%;
+    background-color: goldenrod;
+    color: black;
+    font-size: medium;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 5px;
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+column1 {
+    float: left;
+    width: 45%;
+    text-align: left;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+column3 {
+    float: right;
+    width: 5%;
+    height: 100%;
+    align-content: center;
+}
+
+.search_icon {
+    height: 20%;
+    width: auto;
+}
+
+column4 {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.menu_logo {
+    height: 100%;
+    width: auto;
+}
+
+row {
+    width: 100%
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    padding-right: 40px;
+}
+
+    a:hover {
+        color: white;
+    }
+
+nav .menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+    nav .menu span {
+        width: 40px;
+        height: 3px;
+        background-color: black;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+h1 .abbreviated {
+    display: none;
+}
+
+h1 .full_title {
+    padding-left: 5%;
+}
+
+@media (max-width: 1650px) {
+    column1 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1400px) {
+    column1 {
+        width: 60%;
+    }
+
+    column3 {
+        display: none;
+    }
+
+    column4 {
+        display: none;
+        width: 5%;
+    }
+
+    nav .menu {
+        display: flex;
+        right: 20px;
+        top: 20%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: start;
+    }
+
+        nav ul {
+            flex-direction: column;
+            width: 100%;
+            background-color: goldenrod;
+            margin-bottom: 30px;
+        }
+}
+
+@media (max-width: 1000px) {
+    h1 .full_title {
+        display: none;
+    }
+
+    h1 .abbreviated {
+        display: flex;
+    }
+}
